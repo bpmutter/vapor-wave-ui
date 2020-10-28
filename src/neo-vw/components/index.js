@@ -1,9 +1,12 @@
 export { default as Box } from "./Box";
 export { default as Button } from "./Button";
 export { default as Card } from "./Card";
+export { default as Flex } from "./Flex";
 export { default as Heading } from "./Heading";
-export { default as Hr } from "./Hr";
+export { default as Hr } from "./Divider";
 export { default as Link } from "./Link";
 export { default as Text } from "./Text";
 export { default as Image } from "./Image";
 export { default as AestheticProvider } from "./AestheticProvider";
+export { default as useAesthetic } from "./useAesthetic";
+export { default as ProgressSpinner } from "./ProgressSpinner";

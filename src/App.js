@@ -10,6 +10,7 @@ import {
   Heading,
   Text,
   AestheticProvider,
+  ProgressSpinner,
 } from "./neo-vw/components";
 import { Dolphin, Dinosaur } from "./neo-vw/icons";
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
         <Button variant="secondary" mr={2}>
           secondary button
         </Button>
+        <ProgressSpinner />
       </Card>
       <Card
         sx={{
@@ -70,6 +72,7 @@ export default function App() {
           <Text fontSize={0}>
             <Dolphin />
           </Text>
+          <ProgressSpinner />
         </Box>
       </Card>
       <Card
