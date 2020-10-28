@@ -1,11 +1,20 @@
-import "./App.css";
+// import "./App.css";
 import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
-import { Card, Box, Link, Hr, Button, Heading, Text } from "./components";
+import theme from "./neo-vw/style/theme";
+import {
+  Card,
+  Box,
+  Link,
+  Hr,
+  Button,
+  Heading,
+  Text,
+  AestheticProvider,
+} from "./neo-vw/components";
+import { Dolphin, Dinosaur } from "./neo-vw/icons";
 export default function App() {
   return (
-    <ThemeProvider theme={theme} className="App">
+    <AestheticProvider>
       <div
         style={{
           height: "100vh",
@@ -30,6 +39,7 @@ export default function App() {
         <Box sx={{ p: 2, m: 2 }}>
           <Heading as="h3">Neo Vapor Wave</Heading>
           <Text fontSize={0}>what happens here</Text>
+          <Dinosaur />
         </Box>
         <Button variant="primary" mr={2}>
           primary button
@@ -57,7 +67,9 @@ export default function App() {
             </Link>
           </Text>
           <Hr />
-          <Text fontSize={0}></Text>
+          <Text fontSize={0}>
+            <Dolphin />
+          </Text>
         </Box>
       </Card>
       <Card
@@ -86,6 +98,6 @@ export default function App() {
           </Button>
         </Box>
       </Card>
-    </ThemeProvider>
+    </AestheticProvider>
   );
 }

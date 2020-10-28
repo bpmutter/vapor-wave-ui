@@ -1,7 +1,7 @@
 import React from "react";
 import { Card as RebassCard } from "rebass";
 import PropTypes from "prop-types";
-import theme from "../theme";
+import theme from "../style/theme";
 
 const darkStyle = {
   backgroundColor: theme.colors.darkBackground,
