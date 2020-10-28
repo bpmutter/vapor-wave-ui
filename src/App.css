@@ -4,18 +4,25 @@
   width: 90%;
   border: 0;
   height: 2px;
-  /* background-image: linear-gradient(
-    to right,
-    rgba(253, 208, 234, 0.25),
-    rgba(253, 208, 234, 1),
-    rgba(253, 208, 234, 0.25)
-  ); */
   background-color: rgba(253, 208, 234, 0.85);
   box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #fff,
     0 0 10px rgba(253, 208, 234, 1), 0 0 17px rgba(253, 208, 234, 1),
     0 0 20px rgba(253, 208, 234, 1), 0 0 25px rgba(253, 208, 234, 1),
     0 0 37px rgba(253, 208, 234, 1);
 }
+
+.glow-button {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.glow-button:hover {
+  -webkit-animation: glowLink 1.5s ease-in-out infinite alternate;
+  -moz-animation: glowLink 1.5s ease-in-out infinite alternate;
+  animation: glowLink 1.5s ease-in-out infinite alternate;
+}
+
 .glow-link {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -23,12 +30,12 @@
 }
 .glow-link:hover {
   color: #fff;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+  -webkit-animation: glowLink 1.5s ease-in-out infinite alternate;
+  -moz-animation: glowLink 1.5s ease-in-out infinite alternate;
+  animation: glowLink 1.5s ease-in-out infinite alternate;
 }
 
-@keyframes neon1 {
+@keyframes glowLink {
   from {
     text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #afe9fe,
       0 0 350px #afe9fe, 0 0 40px #afe9fe, 0 0 50px #afe9fe, 0 0 75px #afe9fe;
@@ -38,7 +45,7 @@
       0 0 35px #afe9fe, 0 0 40px #afe9fe, 0 0 50px #afe9fe, 0 0 75px #afe9fe;
   }
 }
-@-webkit-keyframes neon1 {
+@-webkit-keyframes glowLink {
   from {
     text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #afe9fe,
       0 0 350px #afe9fe, 0 0 40px #afe9fe, 0 0 50px #afe9fe, 0 0 75px #afe9fe;
@@ -48,7 +55,7 @@
       0 0 35px #afe9fe, 0 0 40px #afe9fe, 0 0 50px #afe9fe, 0 0 75px #afe9fe;
   }
 }
-@-moz-keyframes neon1 {
+@-moz-keyframes glowLink {
   from {
     text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #afe9fe,
       0 0 350px #afe9fe, 0 0 40px #afe9fe, 0 0 50px #afe9fe, 0 0 75px #afe9fe;

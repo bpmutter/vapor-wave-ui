@@ -19,7 +19,9 @@ const theme = {
   },
   colors: {
     text: "#2f2f2f",
+    lightText: "white",
     background: "#FED0EA",
+    darkBackground: "#16000F",
     primary: "#BFB9FF",
     secondary: "#AFE9FE",
     muted: "#CBFFE6",
@@ -46,9 +48,6 @@ const theme = {
       fontWeight: "bold",
       bg: "secondary",
       outlineColor: "accent",
-      "&:hover": {
-        opacity: ".90",
-      },
       "&:active": {
         outlineColor: "accent",
       },
@@ -59,9 +58,6 @@ const theme = {
       fontWeight: "bold",
       fontFamily: "heading",
       outlineColor: "accent",
-      "&:hover": {
-        opacity: ".90",
-      },
     },
   },
   styles: {
